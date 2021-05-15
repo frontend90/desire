@@ -1,0 +1,66 @@
+.works
+  padding-top: 80px 
+  &__title
+    text-align: center
+    +mont_bold 
+    font-size: 36px 
+    line-height: 51px 
+    color: #363838
+  &__wrap
+    margin-top: 40px 
+  &__wrap-header
+    display: flex 
+    align-items: flex-end 
+    border-bottom: 2px solid rgba(#363838,.7)
+  &__wrap-item
+    max-width: 270px 
+    min-height: 230px
+    position: relative
+    &_tool,
+    &_sofa 
+      padding-bottom: 35px 
+    &_tool 
+      &::after
+        content: ''
+        position: absolute
+        bottom: -5px
+        left: 0
+        width: 10px 
+        height: 10px 
+        border-radius: 50%
+        background: #363838
+    &_sofa  
+      margin-left: 31.5%
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 2px 
+        height: 20px 
+        background: rgba(#363838,.7)
+    &_measuring
+      padding-top: 35px 
+      margin-left: 27.5%
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 2px 
+        height: 20px 
+        background: rgba(#363838,.7)
+  &__wrap-inner
+    display: grid 
+    grid-template-columns: max-content max-content
+    align-items: center
+    grid-column-gap: 10px 
+  &__wrap-title
+    +mont_bold 
+    line-height: 23px 
+    color: #363838
+  &__wrap-text
+    margin-top: 15px 
+    line-height: 27px 
+    overflow-y: auto 
+    max-height: 140px

@@ -1,0 +1,88 @@
+.contact-page
+  &__wrap
+    padding-top: 55px 
+    padding-bottom: 100px 
+    display: grid 
+    grid-template-columns: auto auto 
+    grid-template-rows: auto auto       
+    grid-gap: 40px 70px 
+    justify-content: space-between
+  &__title
+    grid-column: 1fr 
+    grid-row: 1/2
+    &_line
+      background: #6D7278
+  &__content
+    grid-column: 2/3
+    grid-row: 2/3
+  &__social
+    display: flex
+    align-items: center
+    grid-column-gap: 35px  
+  &__social-link
+    display: inline-block
+  &__text
+    margin-top: 20px 
+    line-height: 28px 
+    color: #A1A1A1
+  &__contacts
+    margin-top: 10px 
+  &__contacts-link
+    display: inline-block
+    line-height: 27px 
+    color: #5A5A5A
+  &__contacts-address
+    line-height: 27px 
+  &__contacts-emailWrap
+    margin-top: 15px 
+    display: flex 
+    align-items: center
+    grid-column-gap: 15px 
+  &__contacts-email
+    +open_semi 
+    font-size: 14px 
+    line-height: 28px 
+    color: #363838
+  &__form
+    margin-top: 25px 
+  &__form-wrap
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    grid-column-gap: 10px 
+  &__form-input
+    border: 1px solid #DFDFDF
+    border-radius: 20px 
+    width: 100%
+    height: 40px 
+    padding: 0 15px 
+    line-height: 28px 
+    &::placeholder 
+      color: #A1A1A1
+    &:focus
+      border: 1px solid #DFDFDF
+  &__form-textarea
+    margin-top: 10px 
+    border: 1px solid #DFDFDF
+    border-radius: 20px 
+    width: 100%
+    height: 125px 
+    padding: 15px 
+    line-height: 28px 
+    resize: none 
+    &::placeholder 
+      color: #A1A1A1
+    &:focus
+      border: 1px solid #DFDFDF
+  &__form-btn
+    margin-top: 20px 
+    background: #363838
+    border-radius: 21px 
+    +open_semi 
+    color: #FFFFF0
+    line-height: 28px 
+    padding: 6px 71px 
+    &:hover
+      background: #363838
+      
+

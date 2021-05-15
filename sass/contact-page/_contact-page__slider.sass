@@ -1,0 +1,71 @@
+.contact-page
+  &__slider-wrap
+    padding-bottom: 100px 
+  &__slider
+    & .slick-list 
+      overflow: hidden
+      & .slick-track 
+        display: flex 
+        justify-content: space-between
+        grid-column-gap: 10px 
+    & .slick-dots 
+      display: flex 
+      align-items: center
+      grid-column-gap: 30px
+      justify-content: center
+      margin-top: 35px  
+      & li 
+        width: 8px 
+        height: 8px
+        background: #363838
+        border-radius: 50%
+        cursor: pointer
+        & button 
+          font-size: 0
+      & .slick-active 
+        background: #FFEF35
+  &__slider-block
+    text-align: center
+    position: relative
+    cursor: pointer
+    max-width: 170px 
+    &:hover::before 
+      opacity: 1
+      visibility: visible
+    &:hover .contact-page__slider-overlay
+      opacity: 1
+      visibility: visible
+    &:hover .contact-page__slider-title
+      transform: translateY(0)
+      opacity: 1
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(#ffffff,.6)
+      transition: .3s linear 
+      opacity: 0
+      visibility: hidden
+  &__slider-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: grid 
+    align-items: center
+    justify-content: center
+    transition: .3s linear 
+    opacity: 0 
+    visibility: hidden
+  &__slider-title
+    +mont_bold 
+    font-size: 16px 
+    line-height: 22px 
+    color: rgba(54, 56, 56, 0.9033)
+    transform: translateY(50px)
+    transition: .7s linear 
+    opacity: 0

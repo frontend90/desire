@@ -1,0 +1,33 @@
+@mixin font($font_name, $file_name, $weight, $style) 
+  @font-face 
+    font-family: $font_name
+    font-display: swap
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2")
+    font-weight: #{$weight}
+    font-style: #{$style}
+
+@import 'plugins/normalize'
+@import 'plugins/jquery.paginate'
+@import 'fonts'
+@import 'interface'
+@import 'base'
+@import 'blocks/right-menu'
+@import 'blocks/footer'
+@import 'blocks/breadcrumbs'
+@import 'blocks/gallery'
+@import 'index/header'
+@import 'index/collection'
+@import 'index/action'
+@import 'index/works'
+@import 'index/blog'
+@import 'about/header-about'
+@import 'about/about-content'
+@import 'about/about-video'
+@import 'about/about-details'
+@import 'about/about-partners'
+@import 'blog/blog-page'
+@import 'single-post/single-post'
+@import 'contact-page/header-contact'
+@import 'contact-page/contact-page__content'
+@import 'contact-page/contact-page__slider'
+@import 'blocks/adaptive'

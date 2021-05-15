@@ -1,0 +1,72 @@
+.collection
+  padding-top: 130px
+  &__about 
+    padding-top: 0
+    padding-bottom: 70px 
+  &__title 
+    &_text
+      max-width: 730px 
+      margin: auto 
+  &__slider
+    margin-top: 25px 
+    & .slick-list 
+      overflow: hidden
+      & .slick-track 
+        display: flex 
+        justify-content: space-between
+        grid-column-gap: 20px 
+  &__slider-block
+    cursor: pointer
+    position: relative
+    width: 100%
+    max-width: 350px 
+    text-align: center
+    &:hover::before 
+      opacity: 1
+      visibility: visible
+    &:hover .collection__slider-overlay
+      opacity: 1
+      visibility: visible
+    &:hover .collection__slider-title
+      transform: translateY(0)
+      opacity: 1
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(#ffffff,.6)
+      transition: .3s linear 
+      opacity: 0
+      visibility: hidden
+  &__slider-img
+    width: 100%
+  &__slider-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: grid 
+    align-items: center
+    justify-content: center
+    transition: .3s linear 
+    opacity: 0 
+    visibility: hidden
+  &__slider-title
+    font-size: 20px 
+    line-height: 24px 
+    transform: translateY(50px)
+    transition: .7s linear 
+    opacity: 0
+    &_line
+      margin: 20px auto
+      width: 200px 
+    &_text
+      +open_semi 
+      font-size: 14px 
+      line-height: 28px 
+      color: #707070
+

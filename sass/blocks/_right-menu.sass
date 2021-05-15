@@ -1,0 +1,57 @@
+.right-menu
+  position: fixed
+  top: 0
+  right: 0
+  width: 695px
+  height: 100vh 
+  z-index: 9999
+  background: #fff
+  box-shadow: 10px 0 10px 10px #626464
+  transform: translateX(100%)
+  transition: .3s linear 
+  overflow-y: auto
+  padding: 0 15px 
+  &.active 
+    transform: translateX(0)
+  &__close
+    position: absolute
+    width: 26px 
+    height: 26px 
+    top: 40px 
+    left: 45px 
+    transform: rotate(45deg)
+    cursor: pointer
+    display: flex 
+    align-items: center
+    justify-content: center
+  &__close-item
+    background: #363838
+    width: 26px 
+    height: 2px 
+    display: block 
+    transform: rotate(90deg)
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      background: #363838
+      width: 100%
+      height: 100% 
+      transform: rotate(-90deg)
+  &__logo
+    margin-top: 125px 
+    text-align: center
+  &__title
+    margin-top: 35px 
+    &_line 
+      margin: 20px auto 15px 
+    &_text 
+      max-width: 485px 
+      margin: auto 
+  &__image
+    margin-top: 75px
+    text-align: center
+    padding-bottom: 50px 
+
+
+

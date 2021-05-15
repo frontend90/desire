@@ -1,0 +1,34 @@
+.action
+  margin-top: 105px 
+  background: url(../images/action/bg.png) no-repeat 
+  background-size: cover 
+  background-position: center
+  height: 615px 
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(#fff,.8)
+    z-index: 0
+  &__wrap
+    position: relative
+    z-index: 1
+    display: grid 
+    align-items: center
+    height: 615px 
+  &__title
+    max-width: 730px 
+    font-size: 60px 
+    line-height: 80px 
+    &_line
+      margin: 20px 0 
+      height: 1px 
+      border-radius: .5px 
+    &_text
+      max-width: 540px 
+      line-height: 28px 
+      

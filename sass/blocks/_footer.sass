@@ -1,0 +1,83 @@
+.footer
+  &__header
+    background: #DFDFDF
+    padding: 60px 0 80px 0 
+  &__header-wrap
+    display: flex 
+    flex-wrap: wrap
+    align-items: start 
+    justify-content: space-between
+    grid-column-gap: 20px 
+  &__header-contact
+    max-width: 540px 
+  &__header-title
+    +mont_bold 
+    line-height: 23px 
+    color: #363838
+  &__header-text
+    margin-top: 15px 
+    line-height: 27px 
+  &__header-email
+    margin-top: 15px
+    display: flex 
+    align-items: center
+    grid-column-gap: 15px  
+  &__header-emailLink
+    display: inline-block
+    +open_semi 
+    font-size: 14px 
+    color: #363838
+  &__header-form
+    margin-top: 20px 
+    display: flex 
+    align-items: center
+    grid-column-gap: 10px 
+  &__header-input
+    border: 1px solid rgba(#383636,.7)
+    border-radius: 21px 
+    padding: 5px 10px 5px 20px 
+    width: 100%
+    max-width: 370px 
+    line-height: 28px 
+    &::placeholder 
+      color: #A1A1A1
+    &:focus
+      border: 1px solid rgba(#383636,.7)
+  &__header-btn
+    background: #363838
+    border-radius: 21px 
+    padding: 6px 61px 
+    color: #FFFFF0
+    +open_semi 
+    line-height: 28px 
+    &:hover
+      background: #363838
+  &__header-social
+    display: grid 
+    grid-row-gap: 15px 
+  &__header-item
+    display: flex 
+    align-items: center
+    grid-column-gap: 10px  
+  &__header-socialLink
+    display: inline-block
+    +open_semi 
+    font-size: 14px 
+    line-height: 28px 
+    color: #707070
+  &__header-links
+    display: grid 
+    grid-row-gap: 15px 
+  &__header-link
+    display: block 
+    +open_semi 
+    font-size: 14px 
+    line-height: 28px 
+    color: #707070
+  &__footer
+    background: #363838
+    padding: 40px 0 
+  &__footer-text  
+    text-align: center
+    line-height: 28px 
+    color: #A1A1A1

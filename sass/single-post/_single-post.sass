@@ -1,0 +1,163 @@
+.single-post
+  &__wrap 
+    padding-bottom: 100px
+  &__item 
+    margin-bottom: 0
+  &__titleLink
+    font-size: 28px 
+    line-height: 40px 
+  &__text 
+    margin-top: 10px 
+  &__quote
+    margin: 0
+    background: #fff
+    padding: 40px 40px 20px 40px 
+    &_line
+      width: 180px 
+      margin: 20px 0
+    &_author
+      line-height: 23px 
+      color: #363838
+      text-align: left 
+  &__tags
+    margin-top: 40px 
+  &__tags-links
+    margin-top: 5px 
+    grid-column-gap: 25px 
+  &__slider 
+    margin: 40px 0 35px 0 
+    border-top: 1px solid #DFDFDF
+    border-bottom: 1px solid #DFDFDF
+  &__slider-block
+    padding: 40px 30px 30px 30px 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+  &__slider-text
+    max-width: 245px 
+    +open_semi 
+    font-size: 14px 
+    line-height: 28px 
+    color: #707070
+    &_right 
+      text-align: right 
+  &__slider-btn
+    &_left
+      left: 0
+    &_right 
+      right: 0
+  &__comments-title
+    +mont_bold 
+    font-size: 20px 
+    line-height: 31px 
+    color: #363838
+  &__comments-wrap
+    display: flex 
+    align-items: flex-start
+    margin-top: 10px 
+  &__comments-img
+    min-width: 64px 
+    max-width: 64px 
+    height: 64px 
+  &__comments-message
+    margin-left: 15px 
+  &__comments-author
+    +mont_bold 
+    line-height: 23px 
+    color: #363838
+  &__comments-date
+    font-size: 14px 
+    line-height: 28px 
+    color: #A1A1A1
+  &__comments-text
+    margin-top: 10px 
+    line-height: 27px 
+  &__comments-reply
+    +open_semi 
+    font-size: 14px 
+    line-height: 28px 
+    color: #707070
+  &__comments-form
+    margin-top: 40px 
+  &__comments-formTitle
+    +mont_bold 
+    line-height: 23px 
+    color: #363838
+    margin-bottom: 25px 
+  &__comments-textarea
+    border: 1px solid #DFDFDF
+    border-radius: 24px  
+    width: 100%
+    height: 125px 
+    resize: none
+    padding: 15px 
+    line-height: 28px 
+    &::placeholder 
+      color: #A1A1A1
+    &:focus
+      border: 1px solid #DFDFDF
+  &__comments-formWrap
+    margin-top: 10px 
+    display: flex 
+    flex-wrap: wrap
+    grid-column-gap: 20px 
+    grid-row-gap: 20px 
+    align-items: center
+    justify-content: space-between
+  &__comments-input
+    border: 1px solid #DFDFDF
+    border-radius: 20px 
+    width: 360px 
+    height: 40px 
+    padding-left: 15px 
+    padding-right: 15px 
+    line-height: 28px 
+    &::placeholder 
+      color: #A1A1A1
+    &:focus
+      border: 1px solid #DFDFDF
+  &__comments-checkWrap
+    margin-top: 20px 
+  &__comments-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+  &__comments-checkbox + .single-post__comments-label
+    user-select: none
+    display: flex 
+    align-items: center
+    grid-column-gap: 10px 
+    &::before
+      content: ''
+      display: inline-block
+      width: 20px 
+      height: 20px 
+      flex-shrink: 0
+      flex-grow: 0
+      border: 1px solid #979797
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 50% 50%
+  &__comments-checkbox
+    &:checked + .single-post__comments-label
+      &::before
+        border-color: #0b76ef
+        background-color: #0b76ef
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+  &__comments-label
+    font-size: 14px 
+    line-height: 28px 
+    color: #A1A1A1
+  &__comments-btn
+    margin-top: 20px 
+    background: #363838
+    border-radius: 21px 
+    +open_semi 
+    line-height: 28px 
+    color: #FFFFF0
+    padding: 6px 53px 
+    &:hover
+      background: #363838
+      
+
+
